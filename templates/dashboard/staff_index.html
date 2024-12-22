@@ -1,0 +1,137 @@
+{% load crispy_forms_tags %}
+
+<div class="container">
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} fade show" role="alert" id="message-{{ forloop.counter }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+    
+<div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Order Request
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        
+                        <input class="btn btn-info btn-block" type="submit" value="Make Request">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    Orders Records
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
+                        <table class="table bg-white">
+                            <thead class="bg-info text-white">
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total Price</th>
+                                    <th scope="col">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-table-body">
+                                {% for order in orders %}
+                                {% if order.staff == user %}
+                                <tr>
+                                    <td>{{ order.product.name }}</td>
+                                    <td>{{ order.product.category }}</td>
+                                    <td>{{ order.order_quantity }}</td>
+                                    <td class="order-total-price">${{ order.total_price }}</td>
+                                    <td>{{ order.date }}</td>
+                                </tr>
+                                {% endif %}
+                                {% endfor %}
+                                <!-- Total Amount Row -->
+                                <tr>
+                                    <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        $<span id="total-amount">0.00</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <button id="generate-bill" class="btn btn-primary">Generate Bill</button>
+                            <button id="send-pdf" class="btn btn-secondary">Send PDF</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    // Function to hide messages after 5 seconds
+    document.addEventListener('DOMContentLoaded', function() {
+        const messages = document.querySelectorAll('[id^="message-"]');
+        messages.forEach(message => {
+            setTimeout(() => {
+                message.style.display = 'none'; // Hide the message
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+
+        // Calculate total amount when the "Generate Bill" button is clicked
+        document.getElementById('generate-bill').addEventListener('click', function() {
+            let totalAmount = 0;
+            const prices = document.querySelectorAll('.order-total-price');
+            prices.forEach(price => {
+                // Remove the dollar sign and convert to float
+                totalAmount += parseFloat(price.textContent.replace('$', '')) || 0;
+            });
+            // Update the total amount display
+            document.getElementById('total-amount').textContent = totalAmount.toFixed(2);
+        });
+
+        // Handle the "Send PDF" button click
+        document.getElementById('send-pdf').addEventListener('click', function() {
+            // Logic to send PDF goes here
+            alert('PDF sent successfully!'); // Placeholder alert for demonstration
+
+            // Clear the table
+            const orderTableBody = document.getElementById('order-table-body');
+            orderTableBody.innerHTML = ''; // Clear all rows in the table body
+
+            // Reset the total amount display
+            document.getElementById('total-amount').textContent = '0.00';
+
+            // Fetch new order requests (this is an example, you need to implement the server-side logic)
+            fetchNewRequests();
+        });
+    });
+
+    function fetchNewRequests() {
+        // Use AJAX to fetch new order requests from the server
+        fetch('/fetch-new-orders/') // Replace with your actual endpoint
+            .then(response => response.json())
+            .then(data => {
+                const orderTableBody = document.getElementById('order-table-body');
+                data.orders.forEach(order => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${order.product.name}</td>
+                        <td>${order.product.category}</td>
+                        <td>${order.order_quantity}</td>
+                        <td class="order-total-price">$${order.total_price}</td>
+                        <td>${order.date}</td>
+                    `;
+                    orderTableBody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching new requests:', error);
+            });
+    }
+</script>

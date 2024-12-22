@@ -1,0 +1,64 @@
+<!-- Topside -->
+<div class="container">
+    <div class="row">
+        <!-- Messages Section -->
+        <div class="col-md-4">
+            <div class="card"style="margin-top: -20px;">
+                <div class="card-header bg-info text-white">
+                    Messages
+                </div>
+                <div class="card-body">
+                    <marquee behavior="scroll" direction="up" scrollamount="3">
+                        {% for message in messages %}
+                        {% if message %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <!-- Actions Section -->
+        <div class="col-md-8">
+            <div class="card" style="margin-top: -20px;">
+                <div class="card-header bg-info text-white">
+                    Actions
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <!-- Staff -->
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-staff' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Staff <i class="fas fa-users"></i></h4>
+                                    <h3>{{ workers_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Products -->
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-product' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Products <i class="fas fa-box"></i></h4>
+                                    <h3>{{ product_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Orders -->
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-order' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Orders <i class="fas fa-shipping-fast"></i></h4>
+                                    <h3>{{ orders_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Topside -->
