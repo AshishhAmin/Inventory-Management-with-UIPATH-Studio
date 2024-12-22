@@ -1,5 +1,5 @@
 # Smart Inventory Management
-An efficient inventory management system built using Django to manage user profiles, inventory, and orders seamlessly.
+An efficient inventory management system built using Django to manage user profiles, inventory, and orders seamlessly with UIPath Studio for Real time monitoring the stock levels and invoice automation.  
 
 ## Table of Contents
 1. Project Overview  
