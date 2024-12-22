@@ -37,6 +37,8 @@ An efficient inventory management system built using Django to manage user profi
 - Bootstrap: For responsive design.  
 - Font Awesome: For icons.  
 - Chart.js: For charts and graphs.
+### RPA Software:
+- UIPATH STUDIO  
 
 ## 4. Functional Requirements
 ### User Management:  
