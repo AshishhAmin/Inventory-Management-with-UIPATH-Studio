@@ -1,0 +1,42 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "scrapedData&Sequence_1",
+        "userEmail&Sequence_1",
+        "ExtractedTextString&Sequence_1",
+        "BILLTable&Sequence_1",
+        "outputElement&Sequence_1",
+        "wordsInfo&Sequence_1",
+        "variable1&Sequence_1",
+        "excel&Sequence_2",
+        "excelpdf&Sequence_2",
+        "pdfAttachmentPath&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "argument1",
+        "TriggerEventArgs"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Flowchart1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "assemblyStates": {
+    "C2E4EE5C183_send_mes.TGaYF2ky4zR1gPgp91ix3lr1": {
+      "namespace": "UiPath.IntegrationService.Activities.SWEntities.C2E4EE5C183_send_message_to_user_v2_Create.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C2E4EE5C183_send_message_to_user_v2_Create",
+        "hash": "REE5ME9DKzczenJPUkVpQmltTGF5NjhwcUZUM1lUcHZqa0hudU9BZUxWRDduVFNqV0EyMnhOZ2RKa2E0NGVJSmZ6cEs4cCtSY0dmZXFLZ3ZBTGpDYlE9PQ",
+        "assemblyName": "C2E4EE5C183_send_mes.TGaYF2ky4zR1gPgp91ix3lr1"
+      }
+    }
+  }
+}

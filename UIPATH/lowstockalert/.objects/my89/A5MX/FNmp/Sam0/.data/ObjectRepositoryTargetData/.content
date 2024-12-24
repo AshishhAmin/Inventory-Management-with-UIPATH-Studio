@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lZcltJPZn0qKyFatcjZYJw" Reference="iMxXQtjkgUKfauXptFLT-Q/Sam0Jb6JGU2uyX1erMQc8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://127.0.0.1:8000/index/" DesignTimeRectangle="1067, 407, 264, 140" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='                                                                                                           ' idx='2' tag='DIV' /&gt;" Guid="54849483-8e23-45ab-ba49-3cdea30f0925" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home page' /&gt;" SearchSteps="Selector" Version="V4">
+      <imageRef attrName="InformativeScreenshot" originalValue="59f614b78024bd9fd78721bedb3ca6ae.png" xmlns="">0ZVa_4MhCQkm1azHM7kbvmQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

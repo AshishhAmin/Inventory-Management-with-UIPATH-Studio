@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Generate Bill'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "FU5CkT0GJkWXw0nDwHbkpg",
+  "Reference": "r1OfQUK4ZkyWyrpCspPkDA/FU5CkT0GJkWXw0nDwHbkpg",
+  "ParentRef": "r1OfQUK4ZkyWyrpCspPkDA/aX8uM__Cn0CNPLk5y3dpkA",
+  "Created": "2024-12-18T15:59:05.5211384Z",
+  "Updated": "2024-12-18T15:59:05.5211384Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

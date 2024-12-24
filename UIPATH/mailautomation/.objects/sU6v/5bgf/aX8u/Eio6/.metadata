@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click Event Trigger 'Generate Bill'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Eio6VCxuBkCUVzBKP1uxRA",
+  "Reference": "r1OfQUK4ZkyWyrpCspPkDA/Eio6VCxuBkCUVzBKP1uxRA",
+  "ParentRef": "r1OfQUK4ZkyWyrpCspPkDA/aX8uM__Cn0CNPLk5y3dpkA",
+  "Created": "2024-12-18T15:48:27.9528677Z",
+  "Updated": "2024-12-18T15:48:27.9528677Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

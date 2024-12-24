@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8qxfTrZKUEi47nEqeHtuYA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://127.0.0.1:8000/index/" DesignTimeRectangle="1058, 772, 151, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='generate-bill' tag='BUTTON' /&gt;" Guid="6baf3152-0398-43c1-bb8c-4855f96b8cdf" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home page' /&gt;" SearchSteps="Selector" Version="V4">
+      <imageRef attrName="InformativeScreenshot" originalValue="3449eb6f583dd0417b7ba0cce06bfd21.png" xmlns="">0vNaiVxObNUiD0zzId3a5yg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ClickTrigger</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click Event Trigger 'Products 1'",
+  "Type": "Element",
+  "Id": "Sam0Jb6JGU2uyX1erMQc8w",
+  "Reference": "iMxXQtjkgUKfauXptFLT-Q/Sam0Jb6JGU2uyX1erMQc8w",
+  "ParentRef": "iMxXQtjkgUKfauXptFLT-Q/FNmpkmG-pEOoxqH02y8_ow",
+  "Created": "2024-12-19T15:16:07.8165529Z",
+  "Updated": "2024-12-19T15:16:07.8165529Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

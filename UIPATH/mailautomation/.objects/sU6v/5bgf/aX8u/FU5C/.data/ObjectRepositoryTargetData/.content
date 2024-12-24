@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SgOjwVce_US9qY6ie2wxkg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://127.0.0.1:8000/index/" CVScreenId="1e411b88-2adb-41c0-94f6-5b60b70e6dea" CvElementArea="1056, 769, 155, 61" CvTextArea="1076, 789, 113, 20" CvTextArgument="Generate Bill" CvType="Button" DesignTimeRectangle="1058, 772, 151, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='generate-bill' tag='BUTTON' type='' class='btn btn-primary' aaname='Generate Bill' check:innerText='Generate Bill' /&gt;" Guid="835db954-8db0-48a0-89fc-c1c89de912d5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fcfa06b8c874000cde92cd918a499ce9.png" xmlns="">0udRKu8-U7k6vPzpMmtp4fQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
