@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "version": 2,
     "builds": [
       {
@@ -13,3 +14,19 @@
       }
     ]
   }
+=======
+  "version": 2,
+  "builds": [
+    {
+      "src": "inventorymanagement/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "inventorymanagement/wsgi.py"
+    }
+  ]
+}
+>>>>>>> c3a729ea36ac8da93faca31be146835ac444417c
