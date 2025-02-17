@@ -59,10 +59,15 @@ An efficient inventory management system built using Django to manage user profi
 ## 5. Development Environment
 - IDE/Text Editor: Any preferred editor (e.g., PyCharm, VSCode).  
 - Version Control: Git for version control and collaboration.  
-- Virtual Environment: Use venv or virtualenv for dependency management.  
+- Virtual Environment: Use venv or virtualenv for dependency management.
 
-## 8. Documentation
+## 6. Documentation
 - Code Documentation: Use comments and docstrings for functions and classes.  
-- User Documentation: README file.  
+- User Documentation: README file.
+
+## Screenshots:
+[inventory_project.pdf](https://github.com/user-attachments/files/18820826/inventory_project.pdf)
+
+
 
 
